@@ -121,9 +121,10 @@ footer {
 #banner-long {
   max-width: 100%;
   height: auto;
+  caption-side: bottom;
 }
 #banner-short {
-  width: 230px;
+  max-width: 500px;
   display: none;
 }
 .img-div {
@@ -168,7 +169,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
     margin: 1rem;
   }
@@ -178,12 +179,10 @@ footer {
   }
   .img-div img {
     width: 230px;
+    display: none;
   }
   .tips-div img {
     width: 230px;
-  }
-  #banner-short {
-    width: 500px;
   }
 }
 /* ------------------------- */
